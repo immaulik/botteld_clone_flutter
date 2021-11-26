@@ -1,4 +1,4 @@
-import '../Screens/auth_screen.dart';
+import '../Screens/main_screen.dart';
 
 import '../Theme/mytheme.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: MyTheme.lightTheme,
       // ignore: prefer_const_constructors
-      home: AuthScreen(),
+      home: MainScreen(),
     );
   }
 }
