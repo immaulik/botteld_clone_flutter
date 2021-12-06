@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ChangeUsername extends StatefulWidget {
-  const ChangeUsername({Key? key}) : super(key: key);
+class ChangeBio extends StatefulWidget {
+  const ChangeBio({Key? key}) : super(key: key);
 
   @override
-  _ChangeUsernameState createState() => _ChangeUsernameState();
+  _ChangeBioState createState() => _ChangeBioState();
 }
 
-class _ChangeUsernameState extends State<ChangeUsername> {
+class _ChangeBioState extends State<ChangeBio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

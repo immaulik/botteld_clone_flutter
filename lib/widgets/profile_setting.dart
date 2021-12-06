@@ -1,4 +1,8 @@
+import '../widgets/profilesettingwidgets/changeintrest.dart';
+import '../widgets/profilesettingwidgets/changeprofession.dart';
+import '../widgets/profilesettingwidgets/changeusername.dart';
 import 'package:flutter/material.dart';
+import '../widgets/profilesettingwidgets/changegender.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ProfileSetting extends StatefulWidget {
@@ -35,7 +39,9 @@ class _ProfileSettingState extends State<ProfileSetting> {
             height: 3,
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute( builder: (context) => ChangeUsername()));
+            },
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: Row(
@@ -56,7 +62,9 @@ class _ProfileSettingState extends State<ProfileSetting> {
           ),
           const Divider(),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute( builder: (context) => ChangeGender()));
+            },
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: Row(
@@ -77,7 +85,9 @@ class _ProfileSettingState extends State<ProfileSetting> {
           ),
           const Divider(),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute( builder: (context) => ChangeProfession()));
+            },
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: Row(
@@ -137,30 +147,32 @@ class _ProfileSettingState extends State<ProfileSetting> {
               ],
             ),
           ),
+          // const Divider(),
+          // InkWell(
+          //   onTap: () {},
+          //   child: Padding(
+          //     padding: const EdgeInsets.all(8),
+          //     child: Row(
+          //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //       // ignore: prefer_const_literals_to_create_immutables
+          //       children: [
+          //         const Text(
+          //           'Language',
+          //           style: TextStyle(color: Colors.black),
+          //         ),
+          //         const Text(
+          //           'English',
+          //           style: TextStyle(color: Colors.grey),
+          //         ),
+          //       ],
+          //     ),
+          //   ),
+          // ),
           const Divider(),
           InkWell(
-            onTap: () {},
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Text(
-                    'Language',
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  const Text(
-                    'English',
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          const Divider(),
-          InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute( builder: (context) => ChangeIntrest()));
+            },
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: Row(

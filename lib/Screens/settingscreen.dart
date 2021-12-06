@@ -6,7 +6,7 @@ import '../widgets/account_setting.dart';
 import '../widgets/notification_setting.dart';
 import '../widgets/profile_setting.dart';
 
-import '../Screens/changeusername.dart';
+import 'changebio.dart';
 import 'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
 
@@ -111,7 +111,7 @@ class _SettingScreenState extends State<SettingScreen> {
                         Navigator.of(context).push(PageRouteBuilder(
                           pageBuilder:
                               (context, animation, secondaryAnimation) =>
-                                  const ChangeUsername(),
+                                  const ChangeBio (),
                           transitionsBuilder:
                               (context, animation, secondaryAnimation, child) {
                             const begin = Offset(0.0, 1.0);

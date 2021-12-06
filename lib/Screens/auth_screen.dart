@@ -1,3 +1,4 @@
+import 'package:botteld_clone_flutter/Screens/main_screen.dart';
 import 'package:flutter/services.dart';
 
 import '../Components/background.dart';
@@ -20,6 +21,9 @@ class _AuthScreenState extends State<AuthScreen> {
     bool isLogin,
     BuildContext ctx,
   ) async {
+    print(isLogin);
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => MainScreen()));
     try {
       setState(() {
         _isLoading = true;

@@ -1,5 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors, deprecated_member_use, prefer_const_constructors
 
+import 'package:botteld_clone_flutter/Screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 class AuthForm extends StatefulWidget {
@@ -192,7 +193,9 @@ class _AuthFormState extends State<AuthForm> {
               margin: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
               child: RaisedButton(
                 onPressed: () {
-                  if (_formKey.currentState!.validate()) {}
+                  if (_formKey.currentState!.validate()) {
+                     Navigator.of(context).push(MaterialPageRoute( builder: (context) => MainScreen()));
+                  }
                 },
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(80.0)),
